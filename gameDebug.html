@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <form name="t">
+        Số đầu tiên:<br/>
+        <input name="a" type="text" /><br/> Số thứ hai: <br/>
+        <input name="b" type="text" /><br/>
+        <div id="resultDiv"></div>
+        <input type="button" value="Tính tích" onclick="products()" />
+    </form>
+</body>
+<script>
+    function products() {
+        var a = parseInt(document.forms['t']['a'].value);
+        var b = parseInt(document.forms['t']['b'].value);
+        var result = a * b;
+        document.getElementById("resultDiv").innerHTML = "Kết quả: " + result;
+    }
+</script>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    let nums = [];
+    for (let i = 0; i < 100; i++) {
+        nums[i] = Math.floor(Math.random() * 101);
+        document.write(nums[i] + " ");
+    }
+    let nhap = parseInt(prompt("Nhap", ""));
+
+    function solanxuathien() {
+        let count = 0;
+        for (let i = 0; i < nums.length; i++) {
+            if (nums[i] === nhap)
+                count++;
+        }
+    }
+    solanxuathien(nhap);
+</script>
+
+</html>
